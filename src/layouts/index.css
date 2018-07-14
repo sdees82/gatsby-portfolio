@@ -670,24 +670,32 @@ pre tt:after {
 }
 
 .hero{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   height: 100vh;
   /* background: url(https://futurenet.club/cloud_app_assets/img/man.png);
   background-repeat: no-repeat;
   background-position: center; */
 }
 
-.hero h1{
+.hero div{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  transform: translate(0rem, 500%);
+}
+h1{
   font-size: 3.5rem;
   letter-spacing: .2rem;
   color: #fff;
   font-family: Rufina;
   margin: 0;
 }
-
+p{
+  font-family: Oxygen;
+}
 .hero h2{
   color: #fff;
   font-family: Oxygen;
@@ -695,9 +703,23 @@ pre tt:after {
   margin: 0;
   font-size: 1.5rem;
   letter-spacing: .2rem;
+  text-align: center;
+}
+.about .aboutLeft{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
 }
 
-.work{
+.about .aboutLeft h1{
+  margin: 0;
+}
+.about .aboutLeft p{
+
+}
+.work, .about{
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -710,7 +732,25 @@ pre tt:after {
 }
 .work .description h1{
   color: #fff;
+  font-size: 2rem;
 }
+
+.homeTransition-appear{
+  /* transform: translate(0rem, 800%); */
+  opacity: 0;
+}
+ 
+.homeTransition-appear.homeTransition-appear-active{
+  /* transform: translate(0rem, 500%); */
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+
+.homeTransition-done{
+  transform: translate(0rem, 500%);
+}
+
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

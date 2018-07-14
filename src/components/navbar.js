@@ -12,17 +12,17 @@ const Navbar = () =>{
 
                 <section className="navbar-center">
                 <ul>
-                <li><Link to="#home">HOME</Link></li>
-                <li><Link to="#about">ABOUT</Link></li>
-                <li><Link to="#work">WORK</Link></li>
-                <li><Link to="#contact">CONTACT</Link></li>
+                <li><Link to="/">HOME</Link></li>
+                <li><Link to="/about">ABOUT</Link></li>
+                <li><Link to="/work">WORK</Link></li>
+                <li><Link to="/contact">CONTACT</Link></li>
                 </ul>
                 </section>
 
                 <section className="navbar-right">
                     <ul>
                     <li><Link to="https://twitter.com/TayDees">TWITTER</Link></li>
-                    <li><Link to="https://github.com/sdees82">GITHUB</Link></li> */}
+                    <li><Link to="https://github.com/sdees82">GITHUB</Link></li>
                     <li><Link to="/">CODEPEN</Link></li>
                     </ul>
                 </section>
