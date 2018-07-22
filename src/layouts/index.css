@@ -5,7 +5,7 @@ html {
 }
 body {
   margin: 0;
-  background: #222;
+  background: #fff;
 }
 article,
 aside,
@@ -624,12 +624,13 @@ pre tt:after {
 }
 
 .navbar{
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1rem 0;
+  background: #fff;
 }
 
 .navbar .navbar-left {
@@ -663,17 +664,110 @@ pre tt:after {
 
 .navbar .navbar-center ul li, .navbar .navbar-right ul li{
   display: inline-block;
-  padding: 0 .5rem;
+  padding: 0 .5rem 1rem;
   color: #fff;
   font-family: Oxygen;
   margin: 0;
 }
 
+.navLink{
+  animation: borderUnderline .5s;
+}
+
+.navLink::after{
+  content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #121212;
+    transition: width .3s;
+}
+.navLink:hover::after{
+  width: 100%;
+}
+.navbar .navbar-center ul li a, .navbar .navbar-right ul li a{
+  font-size: .9rem;
+  color: #121212;
+  font-weight: bold;
+}
+.hamburger{
+  cursor: pointer;
+  display: none;
+  width: 3rem;
+}
+/*.navbar .sideBar{
+   display: none; 
+  height: 100vh;
+  top: 4rem;
+  position: absolute;
+  left: -2000px;
+  background: #121212;
+  width: 100%;
+  transition: left .4s ease-in-out;
+}*/
+
+.open{
+  display: none;
+  height: 100vh;
+  top: 5rem;
+  position: absolute;
+  left: 0px;
+  background: #121212;
+  width: 100%;
+  transition: left .4s ease-in-out;
+}
+
+.close{
+  display: none;
+  height: 100vh;
+  top: 5rem;
+  position: absolute;
+  left: -2000px;
+  background: #121212;
+  width: 100%;
+  transition: left .4s ease-in-out;
+  left: -2000px;
+}
+.navbar #sidebar ul{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  padding-top: 2rem;
+}
+.navbar #sidebar  ul li{
+  border: 1px solid #fff;
+  width: 90%;
+  text-align: center;
+  padding: 1rem;
+}
+.navbar #sidebar  ul li a{
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.navbar #sidebar ul h1{
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+hr{
+  width: 90%;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+.active{
+  opacity: .3;
+}
 .hero{
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   height: 100vh;
   /* background: url(https://futurenet.club/cloud_app_assets/img/man.png);
   background-repeat: no-repeat;
@@ -681,32 +775,60 @@ pre tt:after {
 }
 
 .hero div{
-  width: 50%;
   margin: auto;
   text-align: center;
-  transform: translate(0rem, 500%);
+  /* transform: translate(0rem, 500%); */
 }
 h1{
   font-size: 3.5rem;
   letter-spacing: .2rem;
-  color: #fff;
+  color: #121212;
   font-family: Rufina;
   margin: 0;
+}
+
+.hero div h1{
+  text-shadow: 1px 0px 1px #000;
+}
+
+.clickety{
+  font-size: 2rem;
+  letter-spacing: .5rem;
+  color: #121212;
+  font-family: Rufina;
+  margin: 0;
+  line-height: 2rem;
 }
 p{
   font-family: Oxygen;
 }
 .hero h2{
-  color: #fff;
+  color: #121212;
   font-family: Oxygen;
   font-weight: 100;
   margin: 0;
   font-size: 1.5rem;
   letter-spacing: .2rem;
   text-align: center;
+  text-shadow: 1px 0px 1px #000;
+}
+
+.mainPic, .mainPicAbout{
+  z-index: 0;
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  width: 28rem;
+  height: auto;
+  bottom: 0;
+}
+
+.mainPicAbout{
+  width: 28rem;
+  min-width: 20rem;
 }
 .about .aboutLeft{
-  color: #fff;
+  color: #000;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -715,44 +837,167 @@ p{
 
 .about .aboutLeft h1{
   margin: 0;
+  color: #000;
 }
 .about .aboutLeft p{
 
 }
-.work, .about{
-  height: 100vh;
+.about{
+  padding: 10rem 0rem 0rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
-.work .project img{
-  width: 40%;
-  /* height: 1rem; */
-}
-.work .description h1{
-  color: #fff;
-  font-size: 2rem;
+.work .baronPage{
+  padding: 6rem 0rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.work .project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work .project a{
+  width: 50%;
+}
+.work .project img{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.work .description{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: justify;
+}
+
+.work .description h1{
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  margin-bottom: .5rem;
+}
+.work .description p{
+  color: #000;
+  font-size: .95rem;
+}
+
+.aboutTransition-appear{
+  height: 0;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.aboutTransition-appear.aboutTransition-appear-active{
+  height: 88.5%;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+.aboutTransition-leave{
+  height: 0;
+  /* opacity: 1;
+  transition: all .3s ease-in-out; */
+}
+.workTransition-appear{
+  opacity: 0;
+}
+
+.workTransition-appear.workTransition-appear-active{
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
 .homeTransition-appear{
-  /* transform: translate(0rem, 800%); */
+  height: 0px;
+  transition: all .4s;
   opacity: 0;
 }
  
 .homeTransition-appear.homeTransition-appear-active{
   /* transform: translate(0rem, 500%); */
   opacity: 1;
-  transition: all .5s ease-in-out;
+  height: 5rem;
+  transition: all .4s;
+}
+.arrow{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  padding-right: 1rem;
+  width: 4rem;
+  animation: pulse 3s infinite;
 }
 
-.homeTransition-done{
-  transform: translate(0rem, 500%);
+.arrowBack{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  padding-left: 1rem;
+  animation: pulse 3s infinite;
+  width: 4rem;
+}
+@keyframes pulse {
+  0% {
+   opacity: .2;
+  }
+  25%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .2;
+  }
+  75%{
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
 }
 
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 100%;
   }
+
+  .arrow, .arrowBack{
+    display: none;
+  }
+
+  .work .project{
+    padding: 0 2rem;
+  }
+  .work .project a{
+    width: 100%;
+  }
+  .work .description{
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .work .description h1{
+    font-size: 1.2rem;
+  }
+  .work .description p{
+    font-size: .9375rem;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .navbar .brand, .navbar .navbar-center,  .navbar .navbar-right{
+    display: none;
+  }
+  .hamburger, .open, .close{
+    display: initial;
+  }
+  .navbar .sideBar{
+    display: initial;
+  }
+  
 }

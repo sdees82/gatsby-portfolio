@@ -1,6 +1,20 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import { CSSTransitionGroup } from 'react-transition-group';
+import Link from 'gatsby-link';
+import Arrow from '../images/blackArrow.png';
+import BackArrow from '../images/blackArrowBack.png';
+import seanMain from '../images/seanMain2.png';
+import ClicketyClack from 'react-clicketyclack';
+
+const lines = [
+    'Hi',
+    `I'm Sean`,
+    `I'm Web Developer from Detroit, Michigan.`,
+    `I love working on exciting new projects using bleeding edge web technology.`,
+    'I enjoy developing user friendly, scalable and engaging websites'
+  ];
+
 const About = () =>{
     return (
         <div>
@@ -8,20 +22,29 @@ const About = () =>{
             <section className="about">
                 <div className="aboutLeft">
                 <CSSTransitionGroup
-        transitionName="homeTransition"
+        transitionName="workTransition"
         transitionAppear={true}
         transitionAppearTimeout={500}
         transitionEnter={false}
         transitionLeave={false}>
-                    <h1>Hi</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </CSSTransitionGroup>
+                   {/*} <h1>Hi</h1>
+    <p>I'm Sean, a Web Developer from Detroit, Michigan. I love working on exciting new projects using bleeding edge web technology. I enjoy developing user friendly, scalable and engaging websites.</p>*/}                
+    <ClicketyClack className="clickety" lines={lines} erase repeat speed={60} eraseSpeed = {30}/>
+    </CSSTransitionGroup>
                 </div>
 
                 <div className="aboutRight">
-
+                <CSSTransitionGroup
+                transitionName="aboutTransition"
+                transitionAppear={true}
+                transitionAppearTimeout={500}
+                transitionLeaveTimeout={300}>
+                    <img className="mainPicAbout" src={seanMain} alt="Sean"/>
+                    </CSSTransitionGroup>
                 </div>
             </section>
+            <Link to="/" className="arrowBack" ><img src={BackArrow} alt="arrow icon" /></Link>
+            <Link to="/work" className="arrow" ><img src={Arrow} alt="arrow icon" /></Link>
             </div>
     );
 }
