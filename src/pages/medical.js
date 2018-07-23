@@ -22,7 +22,6 @@ const Medical = () =>{
         transitionLeave={false}>
         <div className="project">
         <a target="_blank" href="https://github.com/sdees82/Appointment-App"><img src={MedicalImg} alt="Medical appointment app" /></a> 
-        <hr/>
         <p><i>Created with React</i></p>
     </div>
             <div className="description">

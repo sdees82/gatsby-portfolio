@@ -9,6 +9,7 @@
     "gatsby-plugin-react-helmet": "^2.0.10",
     "react-clicketyclack": "^1.2.2",
     "react-helmet": "^5.2.0",
+    "react-tilt": "^0.1.4",
     "react-transition-group": "^1.2.1"
   },
   "keywords": [

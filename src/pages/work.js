@@ -22,11 +22,10 @@ const Work = () =>{
         transitionLeave={false}>
         <div className="project">
         <a target="_blank" href="https://baronrings.com"><img src={baronMain} alt="baron website" /></a> 
-        <hr/>
         <p><i>Created with Wordpress</i></p>
     </div>
             <div className="description">
-                <h1>BARON CHAMPIONSHIP RINGS</h1>
+                <h1>BARON RINGS</h1>
                 <p>This website was created for Baron Championship Rings located in Windsor, ON, Canada. This website was creating with Wordpress, Bootstrap</p>
                 </div>
             </CSSTransitionGroup>

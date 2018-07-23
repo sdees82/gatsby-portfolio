@@ -5,7 +5,12 @@ html {
 }
 body {
   margin: 0;
-  background: #fff;
+  height: 100vh;
+  background: url('../images/66.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+ 
 }
 article,
 aside,
@@ -630,7 +635,7 @@ pre tt:after {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1rem 0;
-  background: #fff;
+  background: transparent;
 }
 
 .navbar .navbar-left {
@@ -665,7 +670,7 @@ pre tt:after {
 .navbar .navbar-center ul li, .navbar .navbar-right ul li{
   display: inline-block;
   padding: 0 .5rem 1rem;
-  color: #fff;
+  color: #8C9799;
   font-family: Oxygen;
   margin: 0;
 }
@@ -679,15 +684,15 @@ pre tt:after {
     display: block;
     width: 0;
     height: 2px;
-    background: #121212;
+    background: #fff;
     transition: width .3s;
 }
 .navLink:hover::after{
   width: 100%;
 }
 .navbar .navbar-center ul li a, .navbar .navbar-right ul li a{
-  font-size: .9rem;
-  color: #121212;
+  font-size: .7rem;
+  color: #fff;
   font-weight: bold;
 }
 .hamburger{
@@ -743,6 +748,7 @@ pre tt:after {
   width: 90%;
   text-align: center;
   padding: 1rem;
+  text-shadow: 1px 0px 1px #000;
 }
 .navbar #sidebar  ul li a{
   font-size: 1.2rem;
@@ -763,15 +769,17 @@ hr{
 .active{
   opacity: .3;
 }
+
+.overlay{
+  
+}
 .hero{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* background: url(https://futurenet.club/cloud_app_assets/img/man.png);
-  background-repeat: no-repeat;
-  background-position: center; */
+ 
 }
 
 .hero div{
@@ -782,7 +790,7 @@ hr{
 h1{
   font-size: 3.5rem;
   letter-spacing: .2rem;
-  color: #121212;
+  color: #fff;
   font-family: Rufina;
   margin: 0;
 }
@@ -794,7 +802,7 @@ h1{
 .clickety{
   font-size: 2rem;
   letter-spacing: .5rem;
-  color: #121212;
+  color: #fff;
   font-family: Rufina;
   margin: 0;
   line-height: 2rem;
@@ -803,7 +811,7 @@ p{
   font-family: Oxygen;
 }
 .hero h2{
-  color: #121212;
+  color: #fff;
   font-family: Oxygen;
   font-weight: 100;
   margin: 0;
@@ -849,6 +857,10 @@ p{
   justify-content: center;
   align-items: center;
 }
+
+.work{
+  height: 100vh;
+}
 .work .baronPage{
   padding: 6rem 0rem 6rem;
   display: flex;
@@ -879,13 +891,13 @@ p{
 }
 
 .work .description h1{
-  color: #000;
+  color: #fff;
   font-size: 2rem;
   letter-spacing: .2rem;
   margin-bottom: .5rem;
 }
 .work .description p{
-  color: #000;
+  color: #fff;
   font-size: .95rem;
 }
 
@@ -896,7 +908,7 @@ p{
 }
 
 .aboutTransition-appear.aboutTransition-appear-active{
-  height: 88.5%;
+  height: 37.350rem;
   opacity: 1;
   transition: all .3s ease-in-out;
 }
@@ -971,18 +983,19 @@ p{
   }
 
   .work .project{
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   .work .project a{
     width: 100%;
   }
   .work .description{
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .work .description h1{
     font-size: 1.2rem;
+    text-align: center;
   }
   .work .description p{
     font-size: .9375rem;

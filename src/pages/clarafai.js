@@ -22,7 +22,6 @@ const Clarafai = () =>{
         transitionLeave={false}>
         <div className="project">
         <a target="_blank" href="https://github.com/sdees82/facial-recognition"><img src={ClarafaiImg} alt="face regconition app" /></a> 
-        <hr/>
         <p><i>Created with React</i></p>
     </div>
             <div className="description">
