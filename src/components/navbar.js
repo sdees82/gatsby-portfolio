@@ -37,6 +37,7 @@ class Navbar extends React.Component{
                 <li><Link to="/work">Baron Website</Link></li>
                 <li><Link to="/medical">Medical Booking App</Link></li>
                 <li><Link to="/clarafai">Facial Recognition App</Link></li>
+                
             </ul>
             </section>
                 <section className="navbar-left">
@@ -49,7 +50,7 @@ class Navbar extends React.Component{
                     <li onMouseEnter={this.handleHover} className={linkClass}><Link to="/">HOME</Link></li>
                     <li onMouseEnter={this.handleHover} className={linkClass}><Link to="/about">ABOUT</Link></li>
                     <li onMouseEnter={this.handleHover} className={linkClass}><Link to="/work">WORK</Link></li>
-       {/*} <li><a href="" mailto="seantedees1982@gmail.com">CONTACT</a></li>*/}
+                     <li onMouseEnter={this.handleHover} className={linkClass}><a href="mailto:seantedees1982@gmail.com">CONTACT</a></li>
                     </ul>
                     </section>
     

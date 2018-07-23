@@ -691,7 +691,7 @@ pre tt:after {
   width: 100%;
 }
 .navbar .navbar-center ul li a, .navbar .navbar-right ul li a{
-  font-size: .7rem;
+  font-size: .8rem;
   color: #fff;
   font-weight: bold;
 }
@@ -796,6 +796,7 @@ h1{
 }
 
 .hero div h1{
+  font-size: 4.5rem;
   text-shadow: 1px 0px 1px #000;
 }
 
@@ -815,7 +816,7 @@ p{
   font-family: Oxygen;
   font-weight: 100;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: .2rem;
   text-align: center;
   text-shadow: 1px 0px 1px #000;
@@ -935,7 +936,7 @@ p{
 .homeTransition-appear.homeTransition-appear-active{
   /* transform: translate(0rem, 500%); */
   opacity: 1;
-  height: 5rem;
+  height: 7.19rem;
   transition: all .4s;
 }
 .arrow{
