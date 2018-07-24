@@ -3,7 +3,6 @@ import Navbar from '../components/navbar';
 import { CSSTransitionGroup } from 'react-transition-group';
 import Link from 'gatsby-link';
 import Arrow from '../images/blackArrow.png';
-import BackArrow from '../images/blackArrowBack.png';
 import seanMain from '../images/seanMain2.png';
 import ClicketyClack from 'react-clicketyclack';
 
@@ -27,9 +26,19 @@ const About = () =>{
         transitionAppearTimeout={500}
         transitionEnter={false}
         transitionLeave={false}>
-                   {/*} <h1>Hi</h1>
-    <p>I'm Sean, a Web Developer from Detroit, Michigan. I love working on exciting new projects using bleeding edge web technology. I enjoy developing user friendly, scalable and engaging websites.</p>*/}                
-    <ClicketyClack className="clickety" lines={lines} erase repeat speed={60} eraseSpeed = {30}/>
+         <h1>Hi</h1>
+     <p>I'm Sean, a Web Developer from Detroit, Michigan. I love working on exciting new projects using bleeding edge web technology. I enjoy developing user friendly, scalable and engaging websites.</p>
+     <br/>
+     <h2>Skills</h2> 
+     <ul>
+         <li>HTML</li>
+         <li>CSS</li>
+         <li>JAVASCRIPT</li>
+         <li>REACTJS</li>
+         <li>ANGULAR</li>
+         <li>NODEJS</li>
+     </ul>           
+    {/* <ClicketyClack className="clickety" lines={lines} erase repeat speed={60} eraseSpeed = {30}/> */}
     </CSSTransitionGroup>
                 </div>
 
@@ -43,7 +52,7 @@ const About = () =>{
                     </CSSTransitionGroup>
                 </div>
             </section>
-            <Link to="/" className="arrowBack" ><img src={BackArrow} alt="arrow icon" /></Link>
+            <Link to="/" className="arrowBack" ><img src={Arrow} alt="arrow icon" /></Link>
             <Link to="/work" className="arrow" ><img src={Arrow} alt="arrow icon" /></Link>
             </div>
     );

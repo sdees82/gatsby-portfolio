@@ -7,7 +7,7 @@ import Link from 'gatsby-link';
 
 const IndexPage = () => (
   
-  <div>
+  <div className="wrapper">
     <Navbar/>
     <Hero/>
   </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/navbar';
-import baronMain from '../images/baronMain.jpg';
+import baronMain from '../images/baronMain2.jpg';
 import Arrow from '../images/blackArrow.png';
 import BackArrow from '../images/blackArrowBack.png';
 import Link from "gatsby-link";
@@ -24,13 +24,13 @@ const Work = () =>{
         <a target="_blank" href="https://baronrings.com"><img src={baronMain} alt="baron website" /></a> 
         <p><i>Created with Wordpress</i></p>
     </div>
-            <div className="description">
+            <article className="description">
                 <h1>BARON RINGS</h1>
                 <p>This website was created for Baron Championship Rings located in Windsor, ON, Canada. This website was creating with Wordpress, Bootstrap</p>
-                </div>
+                </article>
             </CSSTransitionGroup>
         </section>
-        <Link to="/about" className="arrowBack" ><img src={BackArrow} alt="arrow icon" /></Link>
+        <Link to="/about" className="arrowBack" ><img src={Arrow} alt="arrow icon" /></Link>
         <Link to="/medical" className="arrow" ><img src={Arrow} alt="arrow icon" /></Link>
         </div>
         

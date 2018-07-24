@@ -15,7 +15,6 @@ const Hero = () =>{
     return (
         
         <header className="hero">
-        <div className="overlay">
         <CSSTransitionGroup
   transitionName="homeTransition"
   transitionAppear={true}
@@ -32,7 +31,6 @@ const Hero = () =>{
             </Tilt>
             </CSSTransitionGroup>
             <Link to="/about" className="arrow" ><img src={Arrow} alt="arrow icon" /></Link>
-        </div>
         </header>
     );
 }
