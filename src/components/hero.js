@@ -21,14 +21,14 @@ const Hero = () =>{
   transitionAppearTimeout={500}
   transitionEnter={false}
   transitionLeave={false}>
-            <Tilt
+            {/* <Tilt
             options={TiltOptions}
-            >
+            > */}
                 <div>
                     <h1>SEAN DEES</h1>
-                    <h2>WEB DEVELOPER</h2>
+                    <h2>Web Developer</h2>
                 </div>
-            </Tilt>
+            {/* </Tilt> */}
             </CSSTransitionGroup>
             <Link to="/about" className="arrow" ><img src={Arrow} alt="arrow icon" /></Link>
         </header>

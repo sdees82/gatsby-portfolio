@@ -4,15 +4,16 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body {
+/* body {
   height: 100%;
   margin: 0;
-  background: url('../images/67.jpg');
+  /* background: url('../images/67.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: center;
+  background-position: center; 
+  background: #000;
  
-}
+} */
 article,
 aside,
 details,
@@ -208,6 +209,8 @@ html {
   box-sizing: inherit;
 }
 body {
+  height: 100%;
+  background: #111;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
@@ -217,6 +220,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  font-size: 10px;
 }
 img {
   max-width: 100%;
@@ -671,12 +675,13 @@ pre tt:after {
 .navbar .navbar-center ul li, .navbar .navbar-right ul li{
   display: inline-block;
   padding: 0 .5rem 1rem;
-  color: #8C9799;
-  font-family: Oxygen;
+  color: #777;
+  font-family: "Open Sans", arial;
   margin: 0;
+  letter-spacing: 2px;
 }
 
-.navLink{
+.navLink {
   animation: borderUnderline .5s;
 }
 
@@ -692,9 +697,10 @@ pre tt:after {
   width: 100%;
 }
 .navbar .navbar-center ul li a, .navbar .navbar-right ul li a{
-  font-size: .8rem;
+  font-size: 0.6875rem;
   color: #fff;
   font-weight: bold;
+  opacity: .35;
 }
 .hamburger{
   cursor: pointer;
@@ -762,6 +768,9 @@ pre tt:after {
   padding: 1rem 0;
 }
 
+.nav-white{
+  color: #fff;
+}
 hr{
   width: 90%;
   background: #fff;
@@ -785,18 +794,27 @@ body div{
   height: 100%;
 }
 
-h1{
-  font-size: 2.125rem;
+h1, h2{
+  font-size: 1.875rem;
   letter-spacing: .2rem;
   color: #fff;
-  font-family: Rufina;
+  font-family: dosis;
   margin: 0;
+  font-weight: 400;
+  margin-bottom: 70px;
+  line-height: 51px;
+  opacity: .9;
 }
 
-.hero div h1{
-  font-size: 4rem;
-  text-shadow: 1px 0px 5px #000;
-}
+ .hero div h1{
+  font-size: 1.875rem;
+  text-shadow: 1px 0px 5px #000; 
+  letter-spacing: 51px;
+  font-weight: 400;
+  margin-bottom: 70px;
+  line-height: 51px;
+  opacity: .9;
+} 
 
 .clickety{
   font-size: 2rem;
@@ -807,20 +825,21 @@ h1{
   line-height: 2rem;
 }
 p{
-  font-family: Oxygen;
-  font-size:1.2rem;
+  font-family: "Open Sans", Arial;
+  font-size:0.9375rem;
   /* letter-spacing: .25rem; */
-  line-height: 2rem;
+  line-height: 1.7;
 }
 .hero h2{
   color: #fff;
-  font-family: Oxygen;
-  font-weight: 100;
+  font-family: "Open Sans", arial;
+  font-weight: 300;
+  opacity: .35;
   margin: 0;
-  font-size: 1.5rem;
-  letter-spacing: .2rem;
+  font-size: 19px;
+  /* letter-spacing: .2rem; */
   text-align: center;
-  text-shadow: 1px 0px 5px #000;
+  /* text-shadow: 1px 0px 5px #000; */
 }
 
 .about{
@@ -859,11 +878,14 @@ p{
 
 .about .aboutLeft span p{
 width: 100%;
+font-size: 0.8125rem;
 }
 .about .aboutLeft ul{
   list-style: square;
 }
-
+.about .aboutLeft ul li{
+  font-size: 0.8125rem;
+}
 .work{
   height: 100%;
 }
@@ -889,6 +911,7 @@ width: 100%;
   color: #fff;
   padding: 1rem 0;
   text-shadow: 1px 0px 5px #000;
+  margin-bottom: 0;
 }
 .work .project img{
   display: block;
@@ -911,6 +934,7 @@ width: 100%;
 }
 .work .description p{
   color: #fff;
+  font-size: 0.8125rem;
 }
 
 .aboutTransition-appear{
@@ -920,7 +944,7 @@ width: 100%;
 }
 
 .aboutTransition-appear.aboutTransition-appear-active{
-  height: 39.425rem;
+  height: 33.350rem;
   opacity: 1;
   transition: all .3s ease-in-out;
 }
