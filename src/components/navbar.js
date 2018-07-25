@@ -36,19 +36,19 @@ class Navbar extends React.Component {
         <section id="sidebar" className={sideBar}>
           <ul>
             <li>
-              <NavLink  to="/" activeClassName="active">Home</NavLink>
+              <NavLink  to="/" >Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeClassName="active">About</NavLink>
+              <NavLink to="/about" >About</NavLink>
             </li>
             <li>
-              <NavLink to="/work" activeClassName="active">Baron Website</NavLink>
+              <NavLink to="/work" >Baron Website</NavLink>
             </li>
             <li>
-              <NavLink to="/medical" activeClassName="active">Medical Booking App</NavLink>
+              <NavLink to="/medical" >Medical Booking App</NavLink>
             </li>
             <li>
-              <NavLink to="/clarafai" activeClassName="active">Facial Recognition App</NavLink>
+              <NavLink to="/clarafai" >Facial Recognition App</NavLink>
             </li>
             <li>
               <a href="mailto:seantedees1982@gmail.com">Contact</a>
@@ -65,13 +65,13 @@ class Navbar extends React.Component {
         <section className="navbar-center">
           <ul>
             <li className="navLink">
-              <NavLink to="/"  activeClassName="active">HOME</NavLink>
+              <NavLink to="/"  >HOME</NavLink>
             </li>
             <li className="navLink">
-              <NavLink to="/about"  activeClassName="active">ABOUT</NavLink>
+              <NavLink to="/about"  >ABOUT</NavLink>
             </li>
             <li className="navLink">
-              <NavLink to="/work"  activeClassName="active">WORK</NavLink>
+              <NavLink to="/work"  >WORK</NavLink>
             </li>
             <li className="navLink">
               <a href="mailto:seantedees1982@gmail.com">CONTACT</a>
