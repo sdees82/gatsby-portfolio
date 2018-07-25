@@ -5,13 +5,21 @@ import { CSSTransitionGroup } from 'react-transition-group'
 import Link from 'gatsby-link';
 
 
-const IndexPage = () => (
-  
-  <div className="wrapper">
+class IndexPage extends React.Component{
+  constructor(){
+    super();
+  }
+
+
+  render(){
+    return(
+<div className="wrapper">
     <Navbar/>
     <Hero/>
   </div>
+    )
+  }
+}
   
-)
 
 export default IndexPage
