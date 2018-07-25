@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Link from 'gatsby-link';
 import Hamburger from "../images/hamburger.png";
 
 const style = {
@@ -36,22 +36,22 @@ class Navbar extends React.Component {
         <section id="sidebar" className={sideBar}>
           <ul>
             <li>
-              <NavLink  to="/" >Home</NavLink>
+              <Link  to="/" >Home</Link>
             </li>
             <li>
-              <NavLink to="/about" >About</NavLink>
+              <Link to="/about" >About</Link>
             </li>
             <li>
-              <NavLink to="/work" >Baron Website</NavLink>
+              <Link to="/work" >Baron Website</Link>
             </li>
             <li>
-              <NavLink to="/medical" >Medical Booking App</NavLink>
+              <Link to="/medical" >Medical Booking App</Link>
             </li>
             <li>
-              <NavLink to="/clarafai" >Facial Recognition App</NavLink>
+              <Link to="/clarafai" >Facial Recognition App</Link>
             </li>
             <li>
-              <a href="mailto:seantedees1982@gmail.com">Contact</a>
+            <Link to="/contact" >Contact</Link>
               </li>
           </ul>
         </section>
@@ -65,16 +65,16 @@ class Navbar extends React.Component {
         <section className="navbar-center">
           <ul>
             <li className="navLink">
-              <NavLink to="/"  >HOME</NavLink>
+              <Link to="/"  >HOME</Link>
             </li>
             <li className="navLink">
-              <NavLink to="/about"  >ABOUT</NavLink>
+              <Link to="/about"  >ABOUT</Link>
             </li>
             <li className="navLink">
-              <NavLink to="/work"  >WORK</NavLink>
+              <Link to="/work"  >WORK</Link>
             </li>
             <li className="navLink">
-              <a href="mailto:seantedees1982@gmail.com">CONTACT</a>
+            <Link to="/contact" >CONTACT</Link>
             </li>
           </ul>
         </section>

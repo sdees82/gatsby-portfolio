@@ -643,7 +643,7 @@ pre tt:after {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1rem 0;
-  background:  #121212;;
+  background:  transparent;
 }
 
 .navbar .navbar-left {
@@ -798,7 +798,16 @@ body div{
   height: 100%;
 }
 
+.backgroundVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 .hero{
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1010,6 +1019,93 @@ font-size: 0.8125rem;
     opacity: .2;
   }
 }
+
+
+
+.form {
+  width: 20rem;
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 1rem 1.5rem;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.form h1 {
+  /* margin: 10px 0;
+  padding-bottom: 10px; */
+  width: 100%;
+  color: #121212;
+  border-bottom: 3px solid #78788c;
+  margin-right:0;
+  margin-bottom: 1rem;
+}
+
+.form p input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2
+}
+
+.form p textarea{
+  width: 100%;
+}
+.form input:focus {
+  border-bottom: 2px solid #78788c
+}
+
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a
+}
+
+.form button {
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all .3s
+}
+
+.form button:hover {
+  background: #121212;
+  color: #fff;
+  border: 2px solid #121212;
+}
+/* 
+.form div {
+  content: 'Hi';
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000
+} */
+.form span{margin:0 5px 0 15px}
 
 @media only screen and (max-width: 600px) {
   h1, h2{

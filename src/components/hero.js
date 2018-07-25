@@ -4,11 +4,6 @@ import Arrow from "../images/blackArrow.png";
 import seanMain from "../images/seanMain2.png";
 import Link from "gatsby-link";
 
-const TiltOptions = {
-  max: 25,
-  perspective: 70000,
-  transition: true
-};
 const Hero = () => {
   return (
     <header className="hero">

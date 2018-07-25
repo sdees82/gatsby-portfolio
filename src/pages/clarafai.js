@@ -43,7 +43,7 @@ const Clarafai = () => {
       <Link to="/medical" className="arrowBack">
         <img src={Arrow} alt="arrow icon" />
       </Link>
-      <Link to="/" className="arrow">
+      <Link to="/contact" className="arrow">
         <img src={Arrow} alt="arrow icon" />
       </Link>
     </div>
