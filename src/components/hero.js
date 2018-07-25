@@ -3,7 +3,6 @@ import { CSSTransitionGroup } from "react-transition-group";
 import Arrow from "../images/blackArrow.png";
 import seanMain from "../images/seanMain2.png";
 import Link from "gatsby-link";
-import Tilt from "react-tilt";
 
 const TiltOptions = {
   max: 25,
