@@ -668,11 +668,11 @@ pre tt:after {
   padding-right: 2rem;
 }
 .navbar .navbar-center{
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
 }
 .navbar .navbar-right img{
-  width: 2rem;
+  width: 1.8rem;
 }
 .navbar .navbar-center ul, .navbar .navbar-right ul{
   margin: 0;
@@ -715,10 +715,6 @@ pre tt:after {
   width: 1rem;
 }
 
-.icon-cog.icon-white{
-  /* color: #fff; */
-  /* background: #111; */
-}
 .open{
   display: none;
   height: auto;

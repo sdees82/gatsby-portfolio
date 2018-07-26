@@ -86,7 +86,7 @@ class Navbar extends React.Component {
           <ul>
             <li className="navLink">
               <a target="_blank" href="https://twitter.com/TayDees">
-                <img className=".icon-cog.icon-white" src={Twitter} alt="twitter"/>
+                <img className="fontAwesome" src={Twitter} alt="twitter"/>
               </a>
             </li>
             <li className="navLink">
