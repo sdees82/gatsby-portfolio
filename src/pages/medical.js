@@ -3,7 +3,6 @@ import Navbar from "../components/navbar";
 import Video from '../components/video';
 import MedicalImg from "../images/medicalImg2.jpg";
 import Arrow from "../images/blackArrow.png";
-import BackArrow from "../images/blackArrowBack.png";
 import Link from "gatsby-link";
 import { CSSTransitionGroup } from "react-transition-group";
 
