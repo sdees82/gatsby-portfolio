@@ -39,15 +39,15 @@ const Medical = () => {
               was created using ReactJS. You can view the code <strong><a className="dim" target="_blank" href="https://github.com/sdees82/Appointment-App">here</a></strong> or click the picture above.
             </p>
           </article>
+          <Link to="/clarafai" className="arrowDown">
+        <img src={Arrow} alt="arrow icon" />
+      </Link>
         </CSSTransitionGroup>
       </section>
       <Link to="/work" className="arrowBack">
         <img src={Arrow} alt="arrow icon" />
       </Link>
       <Link to="/contact" className="arrow">
-        <img src={Arrow} alt="arrow icon" />
-      </Link>
-      <Link to="/clarafai" className="arrowDown">
         <img src={Arrow} alt="arrow icon" />
       </Link>
     </div>

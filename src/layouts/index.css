@@ -1016,8 +1016,8 @@ font-size: 0.8125rem;
 }
 
 .arrowDown{
-  position: absolute;
-  left: 50%;
+  position: relative;
+  /* left: 50%; */
   bottom: 0;
   -webkit-transform: rotate(90deg); 
   -ms-transform: rotate(90deg);

@@ -36,6 +36,9 @@ const Work = () => {
               Windsor, ON, Canada. This website was creating with Wordpress. You can view the live site <strong><a className="dim" target="_blank" href="https://baronrings.com">here</a></strong> or click the picture above.
             </p>
           </article>
+          <Link to="/medical" className="arrowDown">
+        <img src={Arrow} alt="arrow icon" />
+      </Link>
         </CSSTransitionGroup>
       </section>
       <Link to="/about" className="arrowBack">
@@ -44,9 +47,7 @@ const Work = () => {
       <Link to="/contact" className="arrow">
         <img src={Arrow} alt="arrow icon" />
       </Link>
-      <Link to="/medical" className="arrowDown">
-        <img src={Arrow} alt="arrow icon" />
-      </Link>
+     
     </div>
   );
 };

@@ -42,7 +42,7 @@ const Clarafai = () => {
           </article>
         </CSSTransitionGroup>
       </section>
-      <Link to="/medical" className="arrowBack">
+      <Link to="/about" className="arrowBack">
         <img src={Arrow} alt="arrow icon" />
       </Link>
       <Link to="/contact" className="arrow">
