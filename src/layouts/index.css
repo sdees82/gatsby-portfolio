@@ -221,7 +221,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-size: 16px;
-  overflow: hidden;
+  
 }
 img {
   max-width: 100%;
@@ -918,6 +918,7 @@ font-size: 0.8125rem;
   font-size: 0.8125rem;
 }
 .work{
+  overflow: hidden;
   position: relative;
   z-index: 10;
   height: 100%;
@@ -1013,6 +1014,7 @@ font-size: 0.8125rem;
   animation: pulse 3s infinite;
   width: 1.5rem;
   z-index: 10;
+  
 }
 
 .arrowDown{
@@ -1049,6 +1051,16 @@ font-size: 0.8125rem;
   display: block;
   margin: auto;
   margin-left: 0;
+}
+
+.arrowBack img, .arrow img{
+  display: block;
+  margin: auto;
+  margin-top: 0;
+}
+
+.arrow img{
+
 }
 
 @keyframes pulse {
