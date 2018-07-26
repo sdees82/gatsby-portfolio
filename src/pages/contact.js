@@ -1,16 +1,18 @@
 import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import Arrow from "../images/blackArrow.png";
-import seanMain from "../images/seanMain2.png";
 import Link from "gatsby-link";
 import Navbar from "../components/navbar";
+import Video from '../components/video';
 
 
 const Contact = () => {
   return (
       <div>
           <Navbar/>
-    <header className="hero">
+          <Video/>
+          <div className="overlay"/>
+    <header className="work">
       <CSSTransitionGroup
         transitionName="workTransition"
         transitionAppear={true}
@@ -26,11 +28,8 @@ const Contact = () => {
   <button>Send Message</button>
 </form>
       </CSSTransitionGroup>
-      <Link to="/about" className="arrow">
-        <img src={Arrow} alt="arrow icon" />
-      </Link>
     </header>
-    <Link to="/" className="arrowBack">
+    <Link to="/work" className="arrowBack">
         <img src={Arrow} alt="arrow icon" />
       </Link>
       <Link to="/" className="arrow">

@@ -220,7 +220,8 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  font-size: 10px;
+  font-size: 16px;
+  overflow: hidden;
 }
 img {
   max-width: 100%;
@@ -636,7 +637,7 @@ pre tt:after {
   color: #777;
 }
 .navbar{
-  z-index: 10;
+  z-index: 11;
   position: fixed;
   top: 0;
   width: 100%;
@@ -706,7 +707,7 @@ pre tt:after {
   font-size: 0.6875rem;
   color: #fff;
   font-weight: bold;
-  opacity: .35;
+  opacity: .9;
 }
 .hamburger{
   cursor: pointer;
@@ -714,6 +715,10 @@ pre tt:after {
   width: 1rem;
 }
 
+.icon-cog.icon-white{
+  /* color: #fff; */
+  /* background: #111; */
+}
 .open{
   display: none;
   height: auto;
@@ -753,7 +758,6 @@ pre tt:after {
   background: rgba(18,18,18, .97);
 }
 .navbar #sidebar  ul li{
-  /* border: 1px solid #fff; */
   width: 90%;
   text-align: left;
   padding: 0rem;
@@ -783,10 +787,6 @@ hr{
   margin-bottom: 2rem;
 }
 
-.active{
-  opacity: 1 !important;
-}
-
 .workExpand li{
 display: block;
 }
@@ -795,6 +795,7 @@ body div{
 }
 
 .wrapper{
+  position: relative;
   height: 100%;
 }
 
@@ -804,10 +805,23 @@ body div{
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  z-index: auto;
+}
+
+.overlay{
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: 1;
+  background: rgba(0,0,0,0.65);
 }
 .hero{
   position: relative;
-  z-index: 10;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -855,6 +869,8 @@ p{
 }
 
 .about{
+  position: relative;
+  z-index: 2;
   height: 100%;
   padding: 7rem 0rem 0rem;
   display: grid;
@@ -878,6 +894,7 @@ p{
 }
 
 .about .aboutLeft{
+  position: relative;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -905,6 +922,8 @@ font-size: 0.8125rem;
   font-size: 0.8125rem;
 }
 .work{
+  position: relative;
+  z-index: 10;
   height: 100%;
 }
 .work .baronPage{
@@ -984,6 +1003,7 @@ font-size: 0.8125rem;
   width: 1.5rem;
   -webkit-animation: pulse 3s infinite;
   animation: pulse 3s infinite;
+  z-index: 10;
 }
 
 .arrowBack{
@@ -996,10 +1016,43 @@ font-size: 0.8125rem;
   margin-left: 1rem;
   animation: pulse 3s infinite;
   width: 1.5rem;
+  z-index: 10;
 }
 
-.arrow img, .arrowBack img{
- margin-bottom: 0;
+.arrowDown{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: rotate(90deg); 
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  animation: pulse 3s infinite;
+  width: 1.5rem;
+  z-index: 10;
+}
+
+.arrowUp{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: rotate(90deg); 
+  -ms-transform: rotate(90deg);
+  transform: rotate(270deg);
+  animation: pulse 3s infinite;
+  width: 1.5rem;
+  z-index: 10;
+}
+
+.arrowUp img{
+  display: block;
+  margin: auto;
+  margin-right: 0;
+}
+
+.arrowDown img{
+  display: block;
+  margin: auto;
+  margin-left: 0;
 }
 
 @keyframes pulse {
@@ -1038,8 +1091,6 @@ font-size: 0.8125rem;
 }
 
 .form h1 {
-  /* margin: 10px 0;
-  padding-bottom: 10px; */
   width: 100%;
   color: #121212;
   border-bottom: 3px solid #78788c;
@@ -1091,20 +1142,7 @@ font-size: 0.8125rem;
   color: #fff;
   border: 2px solid #121212;
 }
-/* 
-.form div {
-  content: 'Hi';
-  position: absolute;
-  bottom: -15px;
-  right: -20px;
-  background: #50505a;
-  color: #fff;
-  width: 320px;
-  padding: 16px 4px 16px 0;
-  border-radius: 6px;
-  font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000
-} */
+
 .form span{margin:0 5px 0 15px}
 
 @media only screen and (max-width: 600px) {
@@ -1161,6 +1199,12 @@ p{
 }
 
 @media only screen and (max-width: 1150px) {
+  .navbar{
+    background: #111;
+  }
+  .overlay{
+    display: none;
+  }
   .navbar .brand, .navbar .navbar-center,  .navbar .navbar-right, .navbar .navbar-left p{
     display: none;
   }
@@ -1171,7 +1215,7 @@ p{
     display: initial;
   }
   
-  .arrow, .arrowBack{
+  .arrow, .arrowBack, .arrowDown{
     display: none;
   }
 
@@ -1184,5 +1228,9 @@ p{
 
   .hero span div h1{
     padding-left: 2rem;
+  }
+
+  .backgroundVideo{
+    display: none;
   }
 }

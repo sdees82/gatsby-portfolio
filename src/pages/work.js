@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import Video from '../components/video';
 import baronMain from "../images/baronMain2.jpg";
 import Arrow from "../images/blackArrow.png";
 import BackArrow from "../images/blackArrowBack.png";
@@ -10,6 +11,8 @@ const Work = () => {
   return (
     <div>
       <Navbar />
+      <Video/>
+      <div className="overlay"/>
       <section className="work">
         <CSSTransitionGroup
           className="baronPage"
@@ -39,7 +42,10 @@ const Work = () => {
       <Link to="/about" className="arrowBack">
         <img src={Arrow} alt="arrow icon" />
       </Link>
-      <Link to="/medical" className="arrow">
+      <Link to="/contact" className="arrow">
+        <img src={Arrow} alt="arrow icon" />
+      </Link>
+      <Link to="/medical" className="arrowDown">
         <img src={Arrow} alt="arrow icon" />
       </Link>
     </div>

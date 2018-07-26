@@ -1,14 +1,16 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import Video from '../components/video';
 import { CSSTransitionGroup } from "react-transition-group";
 import Link from "gatsby-link";
 import Arrow from "../images/blackArrow.png";
-import seanMain from "../images/seanMain2.png";
 
 const About = () => {
   return (
     <div>
       <Navbar />
+      <Video/>
+      <div className="overlay"/>
       <section className="about">
         <div className="aboutLeft">
           <CSSTransitionGroup
@@ -35,6 +37,7 @@ const About = () => {
               <li>NODEJS</li>
               <li>GITHUB</li>
               <li>PHOTOSHOP</li>
+              <li>ILLUSTRATOR</li>
               <li>SKETCH</li>
             </ul>
           </CSSTransitionGroup>

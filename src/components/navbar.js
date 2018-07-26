@@ -1,6 +1,9 @@
 import React from "react";
 import Link from 'gatsby-link';
 import Hamburger from "../images/hamburger.png";
+import Twitter from "../images/twitter.png";
+import Github from "../images/github.png";
+import Codepen from "../images/codepen.png";
 
 const style = {
   linkActive: {
@@ -83,17 +86,17 @@ class Navbar extends React.Component {
           <ul>
             <li className="navLink">
               <a target="_blank" href="https://twitter.com/TayDees">
-                TWITTER
+                <img className=".icon-cog.icon-white" src={Twitter} alt="twitter"/>
               </a>
             </li>
             <li className="navLink">
               <a target="_blank" href="https://github.com/sdees82">
-                GITHUB
+              <img className="fontAwesome" src={Github} alt="twitter"/>
               </a>
             </li>
             <li className="navLink">
               <a target="_blank" href="https://codepen.io/taydees/">
-                CODEPEN
+              <img className="fontAwesome" src={Codepen} alt="twitter"/>
               </a>
             </li>
           </ul>

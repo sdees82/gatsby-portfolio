@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import Video from '../components/video';
 import ClarafaiImg from "../images/clarafai2.png";
 import Arrow from "../images/blackArrow.png";
 import BackArrow from "../images/blackArrowBack.png";
@@ -10,6 +11,8 @@ const Clarafai = () => {
   return (
     <div>
       <Navbar />
+      <Video/>
+      <div className="overlay"/>
       <section className="work">
         <CSSTransitionGroup
           className="baronPage"
