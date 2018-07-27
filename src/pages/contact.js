@@ -30,8 +30,8 @@ const Contact = () => {
         <input type="hidden" name="bot-field" />
   <h1>CONTACT ME</h1>
   <p type="Name:"><input type="text" name="name" placeholder=""></input></p>
-  <p type="Email:"><input placeholder=""></input></p>
-  <p type="Message:"><textarea></textarea></p>
+  <p type="Email:"><input name="email" placeholder=""></input></p>
+  <p type="Message:"><textarea name="message"></textarea></p>
   <button>Send Message</button>
 </form>
       </CSSTransitionGroup>
