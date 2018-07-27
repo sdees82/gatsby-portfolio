@@ -20,7 +20,8 @@ const Contact = () => {
         transitionEnter={false}
         transitionLeave={false}
       >
-        <form className="form" name="contact" method="POST" netlify="true" action="/thanks">
+        <form className="form" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks">
+        <input type="hidden" name="form-name" value="contact" />
   <h1>CONTACT ME</h1>
   <p type="Name:"><input placeholder="John Doe"></input></p>
   <p type="Email:"><input placeholder="johndoe@gmail.com"></input></p>
