@@ -1,11 +1,13 @@
 import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import Navbar from "../components/navbar";
+import Video from '../components/video';
 
 const Thanks = () => {
   return (
       <div>
           <Navbar/>
+          <Video/>
     <header className="hero">
       <CSSTransitionGroup
         transitionName="workTransition"
