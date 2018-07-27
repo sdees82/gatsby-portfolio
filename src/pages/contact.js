@@ -23,9 +23,9 @@ const Contact = () => {
         <form className="form" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks">
         <input type="hidden" name="form-name" value="contact" />
   <h1>CONTACT ME</h1>
-  <p type="Name:"><input placeholder="John Doe"></input></p>
-  <p type="Email:"><input placeholder="johndoe@gmail.com"></input></p>
-  <p type="Message:"><textarea></textarea></p>
+  <p><input  type="Name:" placeholder="John Doe" required></input></p>
+  <p ><input type="Email:" placeholder="johndoe@gmail.com" required></input></p>
+  <p ><textarea name="message" required></textarea></p>
   <button>Send Message</button>
 </form>
       </CSSTransitionGroup>
