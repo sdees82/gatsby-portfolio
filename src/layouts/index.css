@@ -1086,9 +1086,9 @@ font-size: 0.8125rem;
 .form {
   width: 20rem;
   height: auto;
-  background: #fff;
+  background: rgba(0,0,0, .40);
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
+  box-shadow: 0 0 25px -10px #fff;
   margin: calc(50vh - 220px) auto;
   padding: 1rem 1.5rem;
   max-width: calc(100vw - 40px);
@@ -1100,12 +1100,17 @@ font-size: 0.8125rem;
 
 .form h1 {
   width: 100%;
-  color: #121212;
-  border-bottom: 3px solid #78788c;
+  padding-bottom: .5rem;
+  color: #fff;
+  border-bottom: 2px solid #bebed2;
   margin-right:0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
+.form p{
+  font-size: 0.8125rem;
+  color: #fff;
+}
 .form p input {
   width: 100%;
   padding: 10px;
@@ -1116,7 +1121,7 @@ font-size: 0.8125rem;
   border: 0;
   font-family: 'Montserrat', sans-serif;
   transition: all .3s;
-  border-bottom: 2px solid #bebed2
+  border-bottom: 2px solid #bebed2;
 }
 
 .form p textarea{
@@ -1138,17 +1143,17 @@ font-size: 0.8125rem;
   padding: 8px 12px;
   margin: 8px 0 0;
   font-family: 'Montserrat', sans-serif;
-  border: 2px solid #78788c;
+  border: 2px solid #fff;
   background: 0;
-  color: #5a5a6e;
+  color: #fff;
   cursor: pointer;
   transition: all .3s
 }
 
 .form button:hover {
-  background: #121212;
-  color: #fff;
-  border: 2px solid #121212;
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .form span{margin:0 5px 0 15px}

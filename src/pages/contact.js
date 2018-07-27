@@ -28,9 +28,9 @@ const Contact = () => {
         data-netlify-honeypot = "bot-field"
         action="/thanks">
   <h1>CONTACT ME</h1>
-  <p type="Name:"><input type="text" name="name" placeholder=""></input></p>
-  <p type="Email:"><input name="email" placeholder=""></input></p>
-  <p type="Message:" ><textarea name="message"></textarea></p>
+  <p>Name:<input type="text" name="name" placeholder=""></input></p>
+  <p>Email:<input name="email" placeholder=""></input></p>
+  <p>Message:<textarea name="message"></textarea></p>
   <button>Send Message</button>
 </form>
       </CSSTransitionGroup>
