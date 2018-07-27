@@ -8,6 +8,7 @@ const Thanks = () => {
       <div>
           <Navbar/>
           <Video/>
+          <div className="overlay"/>
     <header className="hero">
       <CSSTransitionGroup
         transitionName="workTransition"

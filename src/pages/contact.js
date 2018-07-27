@@ -23,11 +23,11 @@ class Contact extends React.Component {
     fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contactForm", ...this.state })
     })
       .then()
       .catch(error => alert(error));
-      this.props.history.push('/thanks');
+      // this.props.history.push('/thanks');
     e.preventDefault();
   };
 
@@ -48,7 +48,7 @@ class Contact extends React.Component {
          transitionEnter={false}
          transitionLeave={false}
        >
-      <form className="form" onSubmit={this.handleSubmit}>
+      <form className="form" name="contactForm" onSubmit={this.handleSubmit} >
         <p>
           <label>
             Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
