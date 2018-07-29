@@ -33,7 +33,7 @@ const Work = () => {
             <h1>BARON RINGS</h1>
             <p>
               This website was created for Baron Championship Rings located in
-              Windsor, ON, Canada. This website was creating with Wordpress. You can view the live site <strong><a className="dim" target="_blank" href="https://baronrings.com">here</a></strong> or click the picture above.
+              Windsor, ON, Canada. This website was created with Wordpress. You can view the live site <strong><a className="dim" target="_blank" href="https://baronrings.com">here</a></strong> or click the picture above.
             </p>
           </article>
           <Link to="/medical" className="arrowDown">
