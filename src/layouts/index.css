@@ -952,6 +952,11 @@ font-size: 0.8125rem;
   margin: auto;
   width: 100%;
 }
+
+.work .project .frameWork{
+  height: auto;
+  width:50px;
+}
 .work .description{
   display: flex;
   flex-direction: column;
@@ -990,7 +995,34 @@ font-size: 0.8125rem;
   opacity: 1;
   transition: opacity .3s ease-in-out;
 }
+.resume{
+  overflow: initial;
+}
+.resumeTop{
+text-align: center;
+}
 
+.resumeTop h1{
+  padding: 0rem 0 1.5rem;
+  margin-bottom: 0;
+  }
+  .resumeTop p span{
+    padding-left: .5rem;
+  }
+
+  .jobDescription{
+    text-align: center;
+    color: #fff;
+  }
+
+  .jobDescription h1{
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  .jobDescription ul{
+    text-align: left; 
+  }
 
 .arrow{
   position: absolute;
@@ -1059,9 +1091,7 @@ font-size: 0.8125rem;
   margin-top: 0;
 }
 
-.arrow img{
 
-}
 
 @keyframes pulse {
   0% {
@@ -1162,6 +1192,10 @@ font-size: 0.8125rem;
   h1, h2{
     font-size: 1.25rem;
   }
+  h3{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+  }
 p{
   font-size:  0.9375rem;
   letter-spacing: 0;
@@ -1244,6 +1278,10 @@ p{
   }
 
   .backgroundVideo{
+    display: none;
+  }
+
+  .resumeDownload{
     display: none;
   }
 }

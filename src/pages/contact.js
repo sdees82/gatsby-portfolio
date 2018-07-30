@@ -38,7 +38,7 @@ const Contact = () => {
     <Link to="/work" className="arrowBack">
         <img src={Arrow} alt="arrow icon" />
       </Link>
-      <Link to="/" className="arrow">
+      <Link to="/resume" className="arrow">
         <img src={Arrow} alt="arrow icon" />
       </Link>
     </div>

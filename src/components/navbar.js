@@ -56,6 +56,9 @@ class Navbar extends React.Component {
             <li>
             <Link to="/contact" >Contact</Link>
               </li>
+              <li>
+            <Link to="/resume" >Resume</Link>
+              </li>
           </ul>
         </section>
         <section className="navbar-left">
@@ -79,6 +82,9 @@ class Navbar extends React.Component {
             <li className="navLink">
             <Link to="/contact" >CONTACT</Link>
             </li>
+            <li className="navLink">
+            <Link to="/resume" >RESUME</Link>
+              </li>
           </ul>
         </section>
 

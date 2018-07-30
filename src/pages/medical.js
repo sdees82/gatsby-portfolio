@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import Video from '../components/video';
 import MedicalImg from "../images/medicalImg2.jpg";
 import Arrow from "../images/blackArrow.png";
+import ReactLogo from "../images/reactLogo.png";
 import Link from "gatsby-link";
 import { CSSTransitionGroup } from "react-transition-group";
 
@@ -29,7 +30,7 @@ const Medical = () => {
               <img src={MedicalImg} alt="Medical appointment app" />
             </a>
             <p>
-              <i>Created with React</i>
+            <img className="frameWork" src={ReactLogo} alt="Made with React JS"/>
             </p>
           </div>
           <article className="description">

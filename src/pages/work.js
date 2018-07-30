@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import Video from '../components/video';
 import baronMain from "../images/baronMain2.jpg";
 import Arrow from "../images/blackArrow.png";
+import WordpressLogo from "../images/wordpressLogo.png";
 import Link from "gatsby-link";
 import { CSSTransitionGroup } from "react-transition-group";
 
@@ -26,7 +27,7 @@ const Work = () => {
               <img src={baronMain} alt="baron website" />
             </a>
             <p>
-              <i>Created with Wordpress</i>
+            <img className="frameWork" src={WordpressLogo} alt="Made with React JS"/>
             </p>
           </div>
           <article className="description">
