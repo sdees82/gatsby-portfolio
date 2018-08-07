@@ -54,7 +54,7 @@ class Navbar extends React.Component {
               <Link to="/clarafai" >Facial Recognition App</Link>
             </li>
             <li>
-            <Link to="/contact" >Contact</Link>
+            <a href="mailto:seantedees1982@gmail.com"to="/contact" >Contact</a>
               </li>
               <li>
             <Link to="/resume" >Resume</Link>
@@ -80,7 +80,7 @@ class Navbar extends React.Component {
               <Link to="/work"  >WORK</Link>
             </li>
             <li className="navLink">
-            <Link to="/contact" >CONTACT</Link>
+            <a href="mailto:seantedees1982@gmail.com" >CONTACT</a>
             </li>
             <li className="navLink">
             <Link to="/resume" >RESUME</Link>
