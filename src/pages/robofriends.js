@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import Video from '../components/video';
-import ClarafaiImg from "../images/clarafai2.png";
+import RoboFriendsIMG from "../images/robofriends.png";
 import Arrow from "../images/blackArrow.png";
 import ReactLogo from "../images/reactLogo.png";
 import Link from "gatsby-link";
 import { CSSTransitionGroup } from "react-transition-group";
 
-const Clarafai = () => {
+const Robofriends = () => {
   return (
     <div>
       <Navbar />
@@ -25,29 +25,24 @@ const Clarafai = () => {
           <div className="project">
             <a
               target="_blank"
-              href="https://github.com/sdees82/facial-recognition"
+              href="https://sdees82.github.io/robofriends.github.io/"
             >
-              <img src={ClarafaiImg} alt="face regconition app" />
+              <img src={RoboFriendsIMG} alt="Robofriends app" />
             </a>
             <p>
             <img className="frameWork" src={ReactLogo} alt="Made with React JS"/>
             </p>
           </div>
           <article className="description">
-            <h1>Face Recognition Application</h1>
+            <h1>RoboFriends Application</h1>
             <p>
-              This is a proof of concept for an image recognition website that's
-              gear toward celebs. It was created with React and uses the{" "}
-              <strong>Clarafai</strong> Api. You can view the code <strong><a className="dim" target="_blank" href="https://github.com/sdees82/facial-recognition">here</a></strong> or click the picture above.
+              This is a simple app created with React that using the <a href="https://robohash.org/"><strong>RoboHash Api</strong></a>. 
+              You can view the code <strong><a className="dim" target="_blank" href="https://sdees82.github.io/robofriends.github.io/">here</a></strong> or click the picture above.
             </p>
           </article>
-          <Link to="/robofriends" className="arrowDown">
-        <img src={Arrow} alt="arrow icon" />
-      </Link>
         </CSSTransitionGroup>
-        
       </section>
-      <Link to="/about" className="arrowBack">
+      <Link to="/clarafai" className="arrowBack">
         <img src={Arrow} alt="arrow icon" />
       </Link>
       <Link to="/contact" className="arrow">
@@ -57,4 +52,4 @@ const Clarafai = () => {
   );
 };
 
-export default Clarafai;
+export default Robofriends;
