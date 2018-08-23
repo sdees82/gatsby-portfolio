@@ -79,7 +79,7 @@ class Navbar extends React.Component {
             <li className="navLink">
               <Link to="/work"  >WORK</Link>
             </li>
-            <li>
+            <li className="navLink">
               <Link to="/contact" >CONTACT</Link>
             </li>
             

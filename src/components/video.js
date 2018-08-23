@@ -4,7 +4,7 @@ import SmokeMp4 from '../video/redSmoke.mp4';
 const Video= () => {
   return (
     
-    <video className="backgroundVideo" loop autoPlay>
+    <video className="backgroundVideo" loop autoPlay muted>
       <source src={Smoke} type="video/webm" />
       <source src={SmokeMp4} type="video/mp4" />
       Your browser does not support the video tag.
