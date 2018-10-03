@@ -33,7 +33,6 @@ class Navbar extends React.Component {
   render() {
     const linkClass = this.state.isHovered ? "navLink" : "";
     const sideBar = this.state.active === true ? "open" : "close";
-    console.log(sideBar);
     return (
       <nav className="navbar">
         <section id="sidebar" className={sideBar}>
