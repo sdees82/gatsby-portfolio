@@ -2,12 +2,19 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Video from '../components/video';
 import { CSSTransitionGroup } from "react-transition-group";
+import Helmet from 'react-helmet'
 import Link from "gatsby-link";
 import Arrow from "../images/blackArrow.png";
 
 const About = () => {
   return (
     <div>
+        <Helmet title="Sean | Dees" 
+    meta={[
+      { name: 'description', content: 'Sean Dees portfolio' },
+      { name: 'keywords', content: 'Sean Dees, Seante Dees, web developer' },
+    ]}
+    />
       <Navbar />
       <Video/>
       <div className="overlay"/>

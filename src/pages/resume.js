@@ -5,10 +5,17 @@ import Arrow from "../images/blackArrow.png";
 import Link from "gatsby-link";
 import myResume from "../images/Dees-Resume'.pdf";
 import { CSSTransitionGroup } from "react-transition-group";
+import Helmet from 'react-helmet'
 
 const Resume = () => {
   return (
     <div>
+          <Helmet title="Sean | Dees" 
+    meta={[
+      { name: 'description', content: 'Sean Dees portfolio' },
+      { name: 'keywords', content: 'Sean Dees, Seante Dees, web developer' },
+    ]}
+    />
       <Navbar />
       <Video/>
       <div className="overlay"/>

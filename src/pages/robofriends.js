@@ -6,10 +6,17 @@ import Arrow from "../images/blackArrow.png";
 import ReactLogo from "../images/reactLogo.png";
 import Link from "gatsby-link";
 import { CSSTransitionGroup } from "react-transition-group";
+import Helmet from 'react-helmet'
 
 const Robofriends = () => {
   return (
     <div>
+          <Helmet title="Sean | Dees" 
+    meta={[
+      { name: 'description', content: 'Sean Dees portfolio' },
+      { name: 'keywords', content: 'Sean Dees, Seante Dees, web developer' },
+    ]}
+    />
       <Navbar />
       <Video/>
       <div className="overlay"/>

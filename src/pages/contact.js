@@ -4,11 +4,17 @@ import Arrow from "../images/blackArrow.png";
 import Link from "gatsby-link";
 import Navbar from "../components/navbar";
 import Video from '../components/video';
-
+import Helmet from 'react-helmet'
 
 const Contact = () => {
   return (
       <div>
+            <Helmet title="Sean | Dees" 
+    meta={[
+      { name: 'description', content: 'Sean Dees portfolio' },
+      { name: 'keywords', content: 'Sean Dees, Seante Dees, web developer' },
+    ]}
+    />
           <Navbar/>
           <Video/>
           <div className="overlay"/>
